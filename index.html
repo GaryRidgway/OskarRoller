@@ -2,12 +2,32 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/styles.css">
 
-    <link rel="stylesheet" href="css/wyvern_styles.css">
-
-    <script src="js/variables/mutations.js"></script>
+    <script src="js/roller.js"></script>
   </head>
   <body>
-
+    <div id='modifiers' class='content-block'>
+      <h1>Modifiers</h1>
+      <div>
+        <input type="checkbox" id="hunters_mark" name="Hunter's Mark" value="">
+        <label for="hunters_mark">Hunter's Mark</label>
+      </div>
+      <div>
+        <input type="checkbox" id="favored_foe" name="Favored Foe" value="">
+        <label for="favored_foe">Favored Foe</label>
+      </div>
+      <div>
+        <input type="checkbox" id="hexblades_curse" name="Hexblade's Curse" value="">
+        <label for="hexblades_curse">Hexblade's Curse</label>
+      </div>
+    </div>
+    <div id='roll_attack' class='content-block'>
+      <h1>Roll Attack</h1>
+      <button id='attack_button' type="button" onclick="roll_attack()">Roll Attack</button>
+      <div id='all_output'>
+        <div id='attack_output'></div>
+      </div>
+    </div>
   </body>
 </html>
